@@ -1,0 +1,5 @@
+{
+  "iconPath": "icon/logo.png",
+  "splashPath": "icon/logo.png",
+  "platforms": ["android", "ios"]
+}

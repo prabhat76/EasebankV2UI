@@ -1,0 +1,28 @@
+
+/* Default: horizontal (mobile) */
+ion-tab-bar {
+  flex-direction: row !important;
+}
+
+/* Vertical for web (screens wider than 768px) */
+@media (min-width: 768px) {
+  ion-tab-bar {
+    flex-direction: column !important;
+    width: 80px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+  ion-tab-bar ion-tab-button {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+    min-height: 80px;
+  }
+  ion-tabs {
+    margin-left: 80px;
+  }
+}
